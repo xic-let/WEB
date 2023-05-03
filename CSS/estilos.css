@@ -1,0 +1,18 @@
+h1 {
+    color: lightsalmon;
+    font-size: 50px;
+    text-align: center;
+}
+
+p {
+    color: green;
+    background-color: burlywood;
+    font-size: 20px;
+    text-align: center;
+}
+
+body {
+    font-family: sans-serif;
+    color: darkslategrey;
+    background-color: lightgray;
+}
