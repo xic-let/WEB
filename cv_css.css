@@ -63,13 +63,23 @@ body {
     max-width: 1140px;
   }
 
+  .br_class {
+    color: black;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: fit-content;
+}
+
   .p_header {
     color: white;
     font-size: 18px;
     letter-spacing: 1px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: block;
+    display: inline-box;
+    max-width: fit-content;
 }
   
   main section:not(:last-child) {
@@ -116,7 +126,7 @@ body {
   }
   
   .skills .column {
-    -ms-flex: 0 0 50%%;
+    -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -133,6 +143,7 @@ body {
   
   .school, .job-title {
     text-transform: capitalize;
+    color: #509e98;
   }
   
   .school span, .job-title span {
