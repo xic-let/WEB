@@ -9,7 +9,7 @@
 <body>
     <h1>Objectos de Formulário</h1>
 
-    <form action="#">
+    <form action="#" autocomplete="off">
         <fieldset>
             <legend>Dados Pessoais</legend>
             <label for="nome">Nome</label>
@@ -130,6 +130,23 @@ Contrato de utilizador:
 <br>
 <input type="color" name="cor">
 
-    </form>
+</form>
+<h1>
+Mais Objectos * barra de termómetro 
+</h1>
+<meter min="0" max="100" low="30" high="70" value="50" optimum="100"> 
+</meter>
+    <br>
+<h1>Mais Objectos * barra de progresso</h1>
+<progress min="0" max="100" value="70"></progress>
+
+<form oninput="resultado.value=a.value*b.value">
+    
+    <input type="number" name="a" id="a">*
+    <input type="number" name="b" id="b">=
+    <output name="resultado" for="a b"></output>
+
+</form>
+
 </body>
 </html>
