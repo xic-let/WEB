@@ -61,7 +61,7 @@
             <br>
             <label>Escolha uma Linguagem
                 <br>
-                <select name="linguagem">
+                <select name="linguagem" id=""size="8" multiple>
                 <optgroup label="FrontEnd">
                     <option value="html">HTML</option>
                     <option value="css">CSS</option>
@@ -73,10 +73,63 @@
                     <option value="python">Python</option>
                 </optgroup>
                 </select>
+
+                <input type="text" list="lista">
+                    <datalist id="lista">
+                        <option value="html">
+                        <option value="css">
+                        <option value="js">
+                        <option value="java">
+                        <option value="c#">
+                        <option value="python">
+                    </datalist>
             </label>
         </fieldset>
 
+        <fieldset> 
+            <legend>Insira o seu CV</legend>
+            <input type="file" name="cv" accept=".pdf">
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagem</legend>
+            <textarea name="msg" id="" cols="30" rows="10" placeholder="Escreva aqui a sua mensagem"></textarea>
+        </fieldset>
+
+        <br>
+        <br>
+<fieldset>
+<textarea cols="30" rows="10" readonly>
+Contrato de utilizador:
+1.blablabla
+2.blablabla
+3.blablabla
+</textarea>
+
+    <label>
+        <input type="checkbox" name="contrato"> Li e Aceito os termos do contrato
+    </label>
+        <br>
+ </fieldset>
+ <br>   
+    <input type="reset" value="Limpar">
     <input type="submit" value="Enviar">
+
+<input type="hidden" value="texto escondido" name="id">
+
+<button type="button"><b><i>Clique aqui</i></b></button>
+
+<input type = "search" name="pesquisa" placeholder="Pesquisar...">
+
+<br>
+<br>
+
+<input type="range" min="0" max="100" step="1" value="50">
+<br>
+<input type="time" name="hora">
+<br>
+<input type="color" name="cor">
+
     </form>
 </body>
 </html>
