@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objectos de Formulário</title>
+</head>
+<body>
+    <h1>Objectos de Formulário</h1>
+
+    <form action="#">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome</label>
+            <input type="text" maxlength="20">
+            <br>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Digite um email válido">
+            <br>
+            <label for="agregado">Agregado Familiar</label>
+            <input type="number" min="1" max="10">
+            <br>
+            <label for="data">Data de Nascimento</label>
+            <input type="date" min="01/01/1950" max="08/05/2023">
+
+            <h2>Possui algum rendimento extra?</h2>
+            <label>
+            <input type="radio" name="rendimento" value="s">Sim
+            </label>
+            <label>
+            <input type="radio" name="rendimento" value="n">Não
+            </label>
+
+            <h2>Sexo</h2>
+            <input type="radio" name="sexo" value="fem">Feminino    
+            <input type="radio" name="sexo" value="masc">Masculino
+            <input type="radio" name="sexo" value="nd">Prefiro não dizer
+
+            <h2>Qual o seu estado civil?</h2>
+            <input type="radio" name="estado_civil" value="sol">Solteiro
+            <input type="radio" name="estado_civil" value="cas">Casado
+            <input type="radio" name="estado_civil" value="div">Divorciado
+            <input type="radio" name="estado_civil" value="viu">Viúvo
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Áreas de Interesse</legend>
+            <label for="interesse">
+            <input type="checkbox" name="interesse" value="html">HTML
+            </label>
+            <label for="interesse">
+            <input type="checkbox" name="interesse" value="css">CSS
+            </label>
+            <label for="interesse">
+            <input type="checkbox" name="interesse" value="js">JavaScript
+            </label>
+
+            <br>
+            <br>
+            <label>Escolha uma Linguagem
+                <br>
+                <select name="linguagem">
+                <optgroup label="FrontEnd">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+                </optgroup>
+                <optgroup label="BackEnd">
+                    <option value="java">JAVA</option>
+                    <option value="c#">C#</option>
+                    <option value="python">Python</option>
+                </optgroup>
+                </select>
+            </label>
+        </fieldset>
+
+    <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
