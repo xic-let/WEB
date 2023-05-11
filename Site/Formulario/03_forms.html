@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet/forms.css">
     <title>Objectos de Formulário</title>
 </head>
-<body>
-    <h1>Objectos de Formulário</h1>
-
+<header>
+    <body>
+    <div class="banner-area">
+<h2>Candidatura</h2>
+</div>
+</header>
     <form action="#" autocomplete="off">
-        <fieldset>
-            <legend>Dados Pessoais</legend>
+    <fieldset>
+       <Article>
+            <legend><h1>Dados Pessoais</h1></legend>
             <label for="nome">Nome</label>
             <input type="text" maxlength="20">
             <br>
@@ -23,44 +28,75 @@
             <br>
             <label for="data">Data de Nascimento</label>
             <input type="date" min="01/01/1950" max="08/05/2023">
+            <br>
+        </Article>
 
-            <h2>Possui algum rendimento extra?</h2>
-            <label>
-            <input type="radio" name="rendimento" value="s">Sim
-            </label>
-            <label>
-            <input type="radio" name="rendimento" value="n">Não
-            </label>
-
-            <h2>Sexo</h2>
-            <input type="radio" name="sexo" value="fem">Feminino    
-            <input type="radio" name="sexo" value="masc">Masculino
-            <input type="radio" name="sexo" value="nd">Prefiro não dizer
-
-            <h2>Qual o seu estado civil?</h2>
+        <Article>
+        <div class="row">  
+            <div class="column">
+            <legend><h1>Estado civil</h1></legend>
+            <label for="solteiro">
             <input type="radio" name="estado_civil" value="sol">Solteiro
+        </label>
+        <label for="casado">
             <input type="radio" name="estado_civil" value="cas">Casado
+        </label>
+        <label for="divorciado">
             <input type="radio" name="estado_civil" value="div">Divorciado
+        </label>
+        <label for="Viuvo">
             <input type="radio" name="estado_civil" value="viu">Viúvo
+        </label>
+            </div>
+            <div style ='float:right' class="column">
+            <legend><h1>Sexo</h1></legend>
+            <label for="feminino">
+            <input type="radio" name="sexo" value="fem">Feminino
+            </label>
+            <label for="masculino">    
+            <input type="radio" name="sexo" value="masc">Masculino
+            </label>
+            <label for="nd">
+            <input type="radio" name="sexo" value="nd">Prefiro não dizer
+            </label>
+            </div>
+            <div style ='float:center' class="column">
+            <legend><h1>Situação Profissional</h1></legend>
+            <label for="desld">
+            <input type="radio" name="rendimento" value="desld">Desempregado longa Duração
+            </label>
+            <label for="desemp">
+            <input type="radio" name="rendimento" value="desemp1">Desempregado 
+            </label>
+            <label for="empcp">
+                <input type="radio" name="rendimento" value="empcp">Empregado por conta própria
+                </label>
+                <label for="empregado">
+                <input type="radio" name="rendimento" value="emp">Empregado por conta de outrém
+                </label>
+            </div>
+            </div>
 
+        </article>
         </fieldset>
 
         <fieldset>
-            <legend>Áreas de Interesse</legend>
+            <article>
+                <div class="row">  
+                <div class="column">
+            <legend><h1>Áreas de Interesse</legend></h1>
             <label for="interesse">
-            <input type="checkbox" name="interesse" value="html">HTML
+            <input type="checkbox" name="interesse" value="FTEND">FrontEnd
             </label>
             <label for="interesse">
-            <input type="checkbox" name="interesse" value="css">CSS
+            <input type="checkbox" name="interesse" value="bkend">BackEnd
             </label>
             <label for="interesse">
-            <input type="checkbox" name="interesse" value="js">JavaScript
+            <input type="checkbox" name="interesse" value="FS">FullStack
             </label>
-
-            <br>
-            <br>
-            <label>Escolha uma Linguagem
-                <br>
+            </div>
+            <div class = "column">
+            <legend><h1>Escolha uma Linguagem </h1></legend>   
                 <select name="linguagem" id=""size="8" multiple>
                 <optgroup label="FrontEnd">
                     <option value="html">HTML</option>
@@ -73,7 +109,9 @@
                     <option value="python">Python</option>
                 </optgroup>
                 </select>
-
+            </div>
+            <div class ="column">
+            <legend><h1>Escolha uma Linguagem</h1> </legend>   
                 <input type="text" list="lista">
                     <datalist id="lista">
                         <option value="html">
@@ -83,22 +121,30 @@
                         <option value="c#">
                         <option value="python">
                     </datalist>
-            </label>
+            </div>
+            </div>
+            </article>
         </fieldset>
-
         <fieldset> 
-            <legend>Insira o seu CV</legend>
-            <input type="file" name="cv" accept=".pdf">
+             <article>
+                <div>
+                <legend><h1>Insira o seu CV</h1></legend>
+                <input type="file" name="cv" accept=".pdf">
+                <br>
+                <br>
+                </div>
+            </article>
         </fieldset>
 
         <fieldset>
-            <legend>Mensagem</legend>
+            <legend ><h2>Mensagem</h2></legend>
             <textarea name="msg" id="" cols="30" rows="10" placeholder="Escreva aqui a sua mensagem"></textarea>
         </fieldset>
 
         <br>
         <br>
 <fieldset>
+    <legend><h3>Permissões RGPD</legend></h3>
 <textarea cols="30" rows="10" readonly>
 Contrato de utilizador:
 1.blablabla
@@ -111,42 +157,15 @@ Contrato de utilizador:
     </label>
         <br>
  </fieldset>
- <br>   
+ <br> 
+ <fieldset>
+    <article>
+ <div class="actions">
     <input type="reset" value="Limpar">
     <input type="submit" value="Enviar">
-
-<input type="hidden" value="texto escondido" name="id">
-
-<button type="button"><b><i>Clique aqui</i></b></button>
-
-<input type = "search" name="pesquisa" placeholder="Pesquisar...">
-
-<br>
-<br>
-
-<input type="range" min="0" max="100" step="1" value="50">
-<br>
-<input type="time" name="hora">
-<br>
-<input type="color" name="cor">
-
+</div>
+</article>
+</fieldset>
 </form>
-<h1>
-Mais Objectos * barra de termómetro 
-</h1>
-<meter min="0" max="100" low="30" high="70" value="50" optimum="100"> 
-</meter>
-    <br>
-<h1>Mais Objectos * barra de progresso</h1>
-<progress min="0" max="100" value="70"></progress>
-
-<form oninput="resultado.value=a.value*b.value">
-    
-    <input type="number" name="a" id="a">*
-    <input type="number" name="b" id="b">=
-    <output name="resultado" for="a b"></output>
-
-</form>
-
 </body>
 </html>

@@ -86,20 +86,8 @@ body {
     border-bottom: 1px solid #ccc;
   }
   
-  .fab {
-    border: 1px solid white;
-    border-radius: 50%;
-    font-size: 1.5em;
-    width: 1.5em;
-    height: 1.5em;
-    line-height: 1.5em;
-    margin: 5px;
-    text-align: center;
-  }
   
-  a .fab {
-    color: white;
-  }
+  
   
   .course, .skills {
     display: -ms-flexbox;
@@ -141,12 +129,12 @@ body {
     color: #509e98;
   }
   
-  .school, .job-title {
+  .school, {
     text-transform: capitalize;
     color: #509e98;
   }
   
-  .school span, .job-title span {
+  .school span, {
     color: #889499;
     text-decoration: underline;
   }
